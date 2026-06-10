@@ -11,11 +11,12 @@ spec:
       app: backend
   template:
     metadata:
-      labels: backend
+      labels:
+        app: backend
     spec:
       containers:
         - name: backend
-          image: 
+          image: psychovivek/argo-backend-app1:latest
           ports:
             - containerPort: 5000
 ...
